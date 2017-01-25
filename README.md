@@ -15,4 +15,6 @@ Run the following commands from this directory to fetch dependencies and compile
 ```
 $ yarn
 $ gulp
+$ find ./build -type f -exec sed -i "s/GOOGLE_OAUTH_CLIENT_ID/the-actual-client-id/g" {} \; # on GNU/Linux
+$ find ./build -type f -exec sed -i '' -e "s/GOOGLE_OAUTH_CLIENT_ID/the-actual-client-id/g" {} \; # on MacOS
 ```
